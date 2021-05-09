@@ -13,7 +13,7 @@ class RegisterViewController: UIViewController {
     private let scrollView: UIScrollView = {
            let scrollView = UIScrollView()
            scrollView.clipsToBounds = true
-        
+        scrollView.backgroundColor = .systemIndigo
            return scrollView
        }()
 
@@ -165,8 +165,8 @@ class RegisterViewController: UIViewController {
     }()
        private let registerButton: UIButton = {
            let button = UIButton()
-           button.setTitle("Register", for: .normal)
-           button.backgroundColor = .systemGreen
+           button.setTitle("ADD USER", for: .normal)
+        button.backgroundColor = .systemBlue
            button.setTitleColor(.white, for: .normal)
            button.layer.cornerRadius = 12
            button.layer.masksToBounds = true
