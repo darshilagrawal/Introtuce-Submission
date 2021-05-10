@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var total = 10
+    var users=[RegisteredUser]()
     let tableView=UITableView()
-    
+    var ref:DatabaseReference?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return total
     }
@@ -39,7 +41,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate=self
         tableView.dataSource=self
-        
+        ref=Database.database().reference()
+        ref?.child("introtuce-submission-defualt-rtdb").observe(.value,with: { (snapshot) in
+            print(snapshot.value as Any)
+
+        })
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

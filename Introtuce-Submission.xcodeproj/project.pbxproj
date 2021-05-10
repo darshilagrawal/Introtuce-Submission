@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		D5BEAEB026482D0300098936 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAEAF26482D0300098936 /* RegisterViewController.swift */; };
 		D5BEAED326483C4800098936 /* Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAED226483C4800098936 /* Additional.swift */; };
 		D5BEAED52648611E00098936 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAED42648611D00098936 /* TabBarController.swift */; };
+		D5BEAED82649B78800098936 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5BEAED72649B78800098936 /* GoogleService-Info.plist */; };
+		D5BEAEDA2649BEAA00098936 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAED92649BEAA00098936 /* DatabaseManager.swift */; };
+		D5BEAEDC2649DF4100098936 /* PhotoToFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAEDB2649DF4100098936 /* PhotoToFirebase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		D5BEAEAF26482D0300098936 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D5BEAED226483C4800098936 /* Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Additional.swift; sourceTree = "<group>"; };
 		D5BEAED42648611D00098936 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D5BEAED72649B78800098936 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5BEAED92649BEAA00098936 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		D5BEAEDB2649DF4100098936 /* PhotoToFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoToFirebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,6 @@
 				72BDF8D56EFB2F589FA2B707 /* Pods-Introtuce-Submission.debug.xcconfig */,
 				A157EBD65B8C6CE8EEAED704 /* Pods-Introtuce-Submission.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +94,7 @@
 		D5BEAE752647E7B500098936 /* Introtuce-Submission */ = {
 			isa = PBXGroup;
 			children = (
+				D5BEAED72649B78800098936 /* GoogleService-Info.plist */,
 				D5BEAE762647E7B500098936 /* AppDelegate.swift */,
 				D5BEAE782647E7B500098936 /* SceneDelegate.swift */,
 				D5BEAED126483C2100098936 /* Helper */,
@@ -132,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				D5BEAED226483C4800098936 /* Additional.swift */,
+				D5BEAED92649BEAA00098936 /* DatabaseManager.swift */,
+				D5BEAEDB2649DF4100098936 /* PhotoToFirebase.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5BEAE832647E7BA00098936 /* LaunchScreen.storyboard in Resources */,
+				D5BEAED82649B78800098936 /* GoogleService-Info.plist in Resources */,
 				D5BEAE802647E7BA00098936 /* Assets.xcassets in Resources */,
 				D5BEAE7E2647E7B500098936 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5BEAEDA2649BEAA00098936 /* DatabaseManager.swift in Sources */,
+				D5BEAEDC2649DF4100098936 /* PhotoToFirebase.swift in Sources */,
 				D5BEAED326483C4800098936 /* Additional.swift in Sources */,
 				D5BEAE8D2647EE8100098936 /* User.swift in Sources */,
 				D5BEAEB026482D0300098936 /* RegisterViewController.swift in Sources */,

@@ -15,4 +15,14 @@
 // An umbrella header, for any other libraries in this repo to access Firebase Public and Private
 // headers. Any package manager complexity should be handled here.
 
-#import <GoogleDataTransport/GoogleDataTransport.h>
+#import <FirebaseCore/FirebaseCore.h>
+
+#import "FirebaseCore/Sources/Private/FIRAppInternal.h"
+#import "FirebaseCore/Sources/Private/FIRComponent.h"
+#import "FirebaseCore/Sources/Private/FIRComponentContainer.h"
+#import "FirebaseCore/Sources/Private/FIRComponentType.h"
+#import "FirebaseCore/Sources/Private/FIRDependency.h"
+#import "FirebaseCore/Sources/Private/FIRHeartbeatInfo.h"
+#import "FirebaseCore/Sources/Private/FIRLibrary.h"
+#import "FirebaseCore/Sources/Private/FIRLogger.h"
+#import "FirebaseCore/Sources/Private/FIROptionsInternal.h"

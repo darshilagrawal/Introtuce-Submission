@@ -302,6 +302,23 @@ class RegisterViewController: UIViewController {
                     alertUserRegisterError()
                     return
             }
+//        DatabaseManager.shared.validateNewUserwithPhone(with: phoneNumber, completion: {[weak self] exists in
+//            guard let strongSelf = self else{
+//                return
+//            }
+//            guard !exists else {
+//                strongSelf.alertUserRegisterError()
+//                return
+//            }
+//            
+//        })
+        let registeredUser=RegisteredUser(firstName: firstName, lastName: lastName, dob: dob, gender: gender, country: country, state: state, homeTown: homeTown, phoneNumber: phoneNumber, telephoneNumber: telephone)
+        DatabaseManager.shared.insertUser(with:registeredUser )
+        
+        guard let image = imageView.image,let data = image.pngData() else{
+            return
+        }
+        
 
     }
     
